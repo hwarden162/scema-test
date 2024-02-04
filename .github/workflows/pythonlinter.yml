@@ -1,0 +1,24 @@
+name: Python Linter
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python Linter
+        uses: sunnysid3up/python-linter@v0.1-beta.7
+        with:
+          source: 'scema-test'
+          strict: 'high'
+        
+
+    
