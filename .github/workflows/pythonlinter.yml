@@ -17,7 +17,6 @@ jobs:
       - name: Python Linter
         uses: sunnysid3up/python-linter@v0.1-beta.7
         with:
-          source: 'scema-test'
           strict: 'high'
         
 
