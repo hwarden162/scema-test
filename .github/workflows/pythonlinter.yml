@@ -27,4 +27,4 @@ jobs:
         pip install mypy
 
     - name: Run MyPy
-      run: mypy
+      run: mypy **.py
